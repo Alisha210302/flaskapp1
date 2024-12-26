@@ -1,9 +1,9 @@
 from flask import Flask
 app = Flask(__name__)
 
-@app.route
+@app.route('/')
 def hello():
     return "Welcome to Kubernetes"
 
 if __name__ = '__main__':
-     app.run(host='0.0.0.0',port='7000',debug=True)
+     app.run(host='0.0.0.0', port='7000', debug=True)
